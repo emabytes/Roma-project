@@ -6,7 +6,6 @@
 @font-face {
     font-family: 'Santio';
     src: url('../font/TTF/Santio\ Bold.ttf') format('truetype');
-    ;
     src: url('../font/OTF/Santio\ Bold.otf') format('opentype');
 }
 
@@ -21,9 +20,14 @@ body {
 }
 
 .parallax {
-    height: 100%;
     background: url(../img/cleo-topper.jpg) center/cover no-repeat;
     background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-dark {
+    background: rgba(0, 0, 0, .3);
+    padding: 0 7%;
 }
 
 nav {
@@ -43,10 +47,6 @@ nav a {
     font-size: 1.3em;
     text-decoration: underline #e7bc0e;
     letter-spacing: 2px;
-}
-
-section {
-    padding: 0 7%;
 }
 
 section:nth-child(1) h1 {
@@ -88,6 +88,8 @@ section:nth-child(3) {
 section:nth-child(3) div {
     background: url(../img/stat-workers-color.svg) left top no-repeat;
     background-size: 200px;
+    padding-bottom: 100px;
+    ;
 }
 
 section:nth-child(3) h1 {
@@ -112,6 +114,7 @@ section:nth-child(3) h1 {
 section:nth-child(4) div {
     background: url(../img/stat-pay-color.svg) left top no-repeat;
     background-size: 200px;
+    padding-bottom: 100px;
 }
 
 section:nth-child(4) h1 {
@@ -133,7 +136,8 @@ section:nth-child(5) h1 {
 
 section:nth-child(6) {
     padding-left: 40%;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
+    padding-top: 100px;
 }
 
 section:nth-child(6) p {
@@ -142,24 +146,25 @@ section:nth-child(6) p {
 }
 
 #kids-photo {
-    background: url(../img/kid.png) center/cover no-repeat;
+    background: url(../img/kid.png) center/cover no-repeat, url(../img/see.png) center/cover no-repeat;
     height: 100%;
 }
 
-section:nth-child(8) {
+#donate {
     background: black;
     color: white;
     padding-bottom: 150px;
+    padding: 0 7%;
 }
 
-section:nth-child(8) h1 {
+#donate h1 {
     font-size: 7em;
     width: 90%;
     padding-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
-section:nth-child(8) button {
+#donate button {
     padding: 15px 30px;
     border: 2px solid white;
     font-size: 1.2em;
@@ -168,7 +173,7 @@ section:nth-child(8) button {
     font-family: 'Roboto', sans-serif;
 }
 
-section:nth-child(8) button:hover {
+#donate button:hover {
     box-shadow: 2px 4px white;
 }
 
@@ -178,6 +183,7 @@ footer {
     color: white;
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 100px;
 }
 
 footer a {
